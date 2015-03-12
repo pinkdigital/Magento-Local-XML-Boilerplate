@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<layout version="0.1.0">
+    <default>
+      <reference name="head">
+        <!-- remove the standard stuff -->
+        <action method="removeItem"><type>skin_css</type><name>css/madisonisland-ie8.css</name></action>
+        <action method="removeItem"><type>skin_css</type><name>css/madisonisland.css</name></action>
+        <action method="removeItem"><type>link_rel</type><name>//fonts.googleapis.com/css?family=Raleway:300,400,500,700,600</name></action>
+      
+        <!-- add site specific elements -->
+            
+        <action method="addLinkRel"><rel>stylesheet</rel><href>//fonts.googleapis.com/css?family=Montserrat:400,70</href></action>
+        <action method="addItem"><type>skin_css</type><name>css/mythemename-ie8.css</name><params/><if><![CDATA[ (lte IE 8) & (!IEMobile)]]></if></action>
+        <action method="addItem"><type>skin_css</type><name>css/mythemename.css</name><params/><if><![CDATA[<!--[if (gte IE 9) | (IEMobile)]><!-->]]></if></action>
+      </reference>
+            
+      <remove name="catalog.compare.sidebar" />
+                
+    </default>
+    
+    <!-- change category catalog default to left column  -->
+    <catalog_category_default translate="label">
+      <reference name="root">
+        <action method="setTemplate"><template>page/2columns-left.phtml</template></action>
+      </reference>
+    </catalog_category_default>
+    
+    <!-- remove estimated shipping / tax -->
+    <checkout_cart_index>
+        <remove name="checkout.cart.shipping" />
+    </checkout_cart_index>
+    
+</layout>
