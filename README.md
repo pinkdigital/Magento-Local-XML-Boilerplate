@@ -1,0 +1,1 @@
+# Magento-Local-XML-Boilerplate
