@@ -10,7 +10,7 @@
             <action method="removeItem"><type>skin_css</type><name>css/madisonisland.css</name></action>
             <action method="removeItem"><type>link_rel</type><name>//fonts.googleapis.com/css?family=Raleway:300,400,500,700,600</name></action>
             
-            <!-- add v12outdoor specific elements -->
+            <!-- add specific elements -->
             
             <!-- <action method="addLinkRel"><rel>stylesheet</rel><href>//fonts.googleapis.com/css?family=Lato:300,400,500,700,600</href></action>-->
             
