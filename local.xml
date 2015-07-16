@@ -35,7 +35,7 @@
         <remove name="right.poll"/>                     <!--Poll-->
         <remove name="tags_popular"/>                   <!--Popular Tags-->
         <remove name="paypal.partner.right.logo"/>      <!--Paypal logo Sample Data-->
-        <remove name="catalogsearch.leftnav"/>          <!--Layered navigation on search result page-->
+        <!--<remove name="catalogsearch.leftnav"/> -->          <!--Layered navigation on search result page-->
         <remove name="sale.reorder.sidebar"/>           <!--Reorder Sidebar When User Logged, in Dashboard-->
         <remove name="customer_account_navigation"/>    <!--Customer Navigation-->
         
